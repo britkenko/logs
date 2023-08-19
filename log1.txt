@@ -1,0 +1,1326 @@
+{\rtf1\ansi\ansicpg949\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red159\green160\blue28;\red64\green11\blue217;
+\red47\green231\blue26;\red230\green135\blue94;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c68469\c68012\c14211;\cssrgb\c32309\c18666\c88229;
+\cssrgb\c17866\c90514\c12813;\cssrgb\c92640\c60359\c44255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sat Aug 19 19:55:11 on ttys001\
+cd /Volumes/green_light/ComfyUI; source /Volumes/green_light/stable-diffusion-webui/venv/bin/activate; export PYTORCH_ENABLE_MPS_FALLBACK=1; python main.py  --use-split-cross-attention --force-fp16\
+(base) blueindigo@Sungs-Mac-Studio ~ % cd /Volumes/green_light/ComfyUI; source /Volumes/green_light/stable-diffusion-webui/venv/bin/activate; export PYTORCH_ENABLE_MPS_FALLBACK=1; python main.py  --use-split-cross-attention --force-fp16\
+** ComfyUI start up time: 2023-08-19 23:20:25.645713\
+\
+Prestartup times for custom nodes:\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Manager\
+\
+Total VRAM 32768 MB, total RAM 32768 MB\
+Forcing FP16.\
+Set vram state to: SHARED\
+Device: mps\
+Using split optimization for cross attention\
+Failed to auto update `Quality of Life Suit` \
+\cf3 QualityOfLifeSuit_Omar92_DIR:\cf2  /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-QualityOfLifeSuit_Omar92\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/EXT_VariationUtils.py", line 4, in <module>\
+    from custom_nodes.SampleDiffusion.EXT_SampleDiffusion import AudioInference\
+ModuleNotFoundError: No module named 'custom_nodes.SampleDiffusion'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/EXT_VariationUtils.py module for custom nodes: No module named 'custom_nodes.SampleDiffusion'\
+\cf4 YK Node Suite: \cf5 Loaded\cf2 \
+23:20:30 - ReActor Node - \cf6 STATUS\cf2  - Running v0.1.1b in ComfyUI\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/sc-node-comfyui/__init__.py", line 1, in <module>\
+    from .scnode import NODE_CLASS_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/sc-node-comfyui/scnode.py", line 7, in <module>\
+    import global_table\
+ModuleNotFoundError: No module named 'global_table'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/sc-node-comfyui module for custom nodes: No module named 'global_table'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-nodes-hnmr/__init__.py", line 3, in <module>\
+    from .sample import KSamplerSetting, KSamplerOverrided, KSamplerXYZ\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-nodes-hnmr/sample.py", line 11, in <module>\
+    from .model import merge2\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-nodes-hnmr/model/merge2.py", line 8, in <module>\
+    from comfy.ldm.models.diffusion.ddpm import LatentDiffusion\
+ModuleNotFoundError: No module named 'comfy.ldm.models.diffusion.ddpm'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-nodes-hnmr module for custom nodes: No module named 'comfy.ldm.models.diffusion.ddpm'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-LexMSDBNodes/__init__.py", line 2, in <module>\
+    from .nodes import MSSqlNode\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-LexMSDBNodes/nodes/MSSqlNode.py", line 2, in <module>\
+    import pyodbc\
+ModuleNotFoundError: No module named 'pyodbc'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-LexMSDBNodes module for custom nodes: No module named 'pyodbc'\
+### Loading: Save img prompt\
+Total VRAM 32768 MB, total RAM 32768 MB\
+Forcing FP16.\
+Set vram state to: SHARED\
+Device: mps\
+### Loading: PixelArtDetector\
+Copying PixelArtDetector JS files for Workflow loading\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-PixelArt-Detector/__init__.py", line 19, in <module>\
+    from .PixelArtDetector import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-PixelArt-Detector/PixelArtDetector.py", line 43, in <module>\
+    from .pixelUtils import *\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-PixelArt-Detector/pixelUtils.py", line 3, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-PixelArt-Detector module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_pixelization/__init__.py", line 9, in <module>\
+    from .modules import devices, shared\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_pixelization/modules/devices.py", line 8, in <module>\
+    import mac_specific\
+ModuleNotFoundError: No module named 'mac_specific'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy_pixelization module for custom nodes: No module named 'mac_specific'\
+### ComfyUI-FaceSwap: Check dependencies\
+### ComfyUI-FaceSwap: Check basic models\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-FaceSwap/__init__.py", line 4, in <module>\
+    from .FaceSwapNode import FaceSwapNode\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-FaceSwap/FaceSwapNode.py", line 1, in <module>\
+    import insightface\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/insightface/__init__.py", line 16, in <module>\
+    from . import model_zoo\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/insightface/model_zoo/__init__.py", line 1, in <module>\
+    from .model_zoo import get_model\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/insightface/model_zoo/model_zoo.py", line 11, in <module>\
+    from .arcface_onnx import *\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/insightface/model_zoo/arcface_onnx.py", line 9, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-FaceSwap module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+hus' utility nodes: loaded\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/abg-comfyui/__init__.py", line 5, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/abg-comfyui module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+!! Trying to start the node\
+!! Requirements need to be installed\
+!! Installing requirements...\
+Requirement already satisfied: ultralytics in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (8.0.157)\
+Requirement already satisfied: mediapipe in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (0.10.3)\
+Requirement already satisfied: pillow in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 3)) (9.5.0)\
+Requirement already satisfied: colorama in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 4)) (0.4.6)\
+Requirement already satisfied: matplotlib>=3.2.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.7.2)\
+Requirement already satisfied: numpy>=1.22.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.23.5)\
+Requirement already satisfied: opencv-python>=4.6.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (4.8.0.76)\
+Requirement already satisfied: pyyaml>=5.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (6.0.1)\
+Requirement already satisfied: requests>=2.23.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.31.0)\
+Requirement already satisfied: scipy>=1.4.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.11.2)\
+Requirement already satisfied: torch>=1.8.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.0.1)\
+Requirement already satisfied: torchvision>=0.9.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (0.15.2)\
+Requirement already satisfied: tqdm>=4.64.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (4.66.1)\
+Requirement already satisfied: pandas>=1.1.4 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.0.3)\
+Requirement already satisfied: seaborn>=0.11.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (0.12.2)\
+Requirement already satisfied: psutil in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (5.9.5)\
+Requirement already satisfied: py-cpuinfo in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (9.0.0)\
+Requirement already satisfied: absl-py in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (1.4.0)\
+Requirement already satisfied: attrs>=19.1.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (23.1.0)\
+Requirement already satisfied: flatbuffers>=2.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (23.5.26)\
+Requirement already satisfied: opencv-contrib-python in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (4.8.0.76)\
+Requirement already satisfied: protobuf<4,>=3.11 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (3.20.3)\
+Requirement already satisfied: sounddevice>=0.4.4 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (0.4.6)\
+Requirement already satisfied: contourpy>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.1.0)\
+Requirement already satisfied: cycler>=0.10 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (0.11.0)\
+Requirement already satisfied: fonttools>=4.22.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (4.42.0)\
+Requirement already satisfied: kiwisolver>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.4.4)\
+Requirement already satisfied: packaging>=20.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (23.1)\
+Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.0.9)\
+Requirement already satisfied: python-dateutil>=2.7 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.8.2)\
+Requirement already satisfied: pytz>=2020.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: tzdata>=2022.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: charset-normalizer<4,>=2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.2.0)\
+Requirement already satisfied: idna<4,>=2.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.10)\
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.26.16)\
+Requirement already satisfied: certifi>=2017.4.17 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2023.7.22)\
+Requirement already satisfied: CFFI>=1.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from sounddevice>=0.4.4->mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (1.15.1)\
+Requirement already satisfied: filelock in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.12.2)\
+Requirement already satisfied: typing-extensions in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (4.7.1)\
+Requirement already satisfied: sympy in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.12)\
+Requirement already satisfied: networkx in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.1)\
+Requirement already satisfied: jinja2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (3.1.2)\
+Requirement already satisfied: pycparser in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from CFFI>=1.0->sounddevice>=0.4.4->mediapipe->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 2)) (2.21)\
+Requirement already satisfied: six>=1.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.2.2->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.16.0)\
+Requirement already satisfied: MarkupSafe>=2.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (2.1.3)\
+Requirement already satisfied: mpmath>=0.19 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics->-r /Volumes/green_light/ComfyUI/custom_nodes/facedetailer/requirements.txt (line 1)) (1.3.0)\
+\cf3 DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\cf2 \
+!! Installing requirements finished...\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/facedetailer/__init__.py", line 9, in <module>\
+    from .FaceDetailer import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/facedetailer/FaceDetailer.py", line 2, in <module>\
+    from mediapipe import solutions\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/__init__.py", line 16, in <module>\
+    import mediapipe.python.solutions as solutions\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/__init__.py", line 17, in <module>\
+    import mediapipe.python.solutions.drawing_styles\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/drawing_styles.py", line 20, in <module>\
+    from mediapipe.python.solutions.drawing_utils import DrawingSpec\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/drawing_utils.py", line 20, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+During handling of the above exception, another exception occurred:\
+\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/facedetailer/__init__.py", line 17, in <module>\
+    from .FaceDetailer import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/facedetailer/FaceDetailer.py", line 2, in <module>\
+    from mediapipe import solutions\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/__init__.py", line 16, in <module>\
+    import mediapipe.python.solutions as solutions\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/__init__.py", line 17, in <module>\
+    import mediapipe.python.solutions.drawing_styles\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/drawing_styles.py", line 20, in <module>\
+    from mediapipe.python.solutions.drawing_utils import DrawingSpec\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/mediapipe/python/solutions/drawing_utils.py", line 20, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/facedetailer module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+WAS Node Suite: BlenderNeko's Advanced CLIP Text Encode found, attempting to enable `CLIPTextEncode` support.\
+WAS Node Suite: `CLIPTextEncode (BlenderNeko Advanced + NSP)` node enabled under `WAS Suite/Conditioning` menu.\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/was-node-suite-comfyui/__init__.py", line 1, in <module>\
+    from .WAS_Node_Suite import NODE_CLASS_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/was-node-suite-comfyui/WAS_Node_Suite.py", line 13194, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/was-node-suite-comfyui module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy-qr-validation-nodes/__init__.py", line 1, in <module>\
+    from .qr_validation import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy-qr-validation-nodes/qr_validation.py", line 3, in <module>\
+    from pyzbar.pyzbar import decode\
+ModuleNotFoundError: No module named 'pyzbar'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy-qr-validation-nodes module for custom nodes: No module named 'pyzbar'\
+[AnimateDiff] - ERROR - No models available. Please download one and put it in models folder\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid/__init__.py", line 8, in <module>\
+    from .sd import load_checkpoint_guess_config, load_lora_for_models\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid/sd.py", line 7, in <module>\
+    from .convert_from_ckpt import convert_unet_checkpoint\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid/convert_from_ckpt.py", line 1, in <module>\
+    from .tuneavideo.models.unet import UNet3DConditionModel\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid/tuneavideo/models/unet.py", line 13, in <module>\
+    from diffusers.modeling_utils import ModelMixin\
+ModuleNotFoundError: No module named 'diffusers.modeling_utils'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid module for custom nodes: No module named 'diffusers.modeling_utils'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/prompt_generator.py", line 3, in <module>\
+    from preprocess import preprocess\
+ModuleNotFoundError: No module named 'preprocess'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/prompt_generator.py module for custom nodes: No module named 'preprocess'\
+Loading network distribution node pack\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/stability-ComfyUI-nodes/__init__.py", line 14, in <module>\
+    imported_module = importlib.import_module(".\{\}".format(module_name), __name__)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/stability-ComfyUI-nodes/color_blend.py", line 3, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/stability-ComfyUI-nodes module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+rgthree's comfy nodes: Loaded 10 exciting nodes.\
+### Loading: ComfyUI-Impact-Pack (V3.21)\
+### ComfyUI-Impact-Pack: Reinstall dependencies (several dependencies are missing.)\
+### ComfyUI-Impact-Pack: Check dependencies\
+Requirement already satisfied: ultralytics in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (8.0.157)\
+Requirement already satisfied: matplotlib>=3.2.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (3.7.2)\
+Requirement already satisfied: numpy>=1.22.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (1.23.5)\
+Requirement already satisfied: opencv-python>=4.6.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (4.8.0.76)\
+Requirement already satisfied: pillow>=7.1.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (9.5.0)\
+Requirement already satisfied: pyyaml>=5.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (6.0.1)\
+Requirement already satisfied: requests>=2.23.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.31.0)\
+Requirement already satisfied: scipy>=1.4.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (1.11.2)\
+Requirement already satisfied: torch>=1.8.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.0.1)\
+Requirement already satisfied: torchvision>=0.9.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (0.15.2)\
+Requirement already satisfied: tqdm>=4.64.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (4.66.1)\
+Requirement already satisfied: pandas>=1.1.4 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.0.3)\
+Requirement already satisfied: seaborn>=0.11.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (0.12.2)\
+Requirement already satisfied: psutil in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (5.9.5)\
+Requirement already satisfied: py-cpuinfo in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (9.0.0)\
+Requirement already satisfied: contourpy>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.1.0)\
+Requirement already satisfied: cycler>=0.10 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (0.11.0)\
+Requirement already satisfied: fonttools>=4.22.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (4.42.0)\
+Requirement already satisfied: kiwisolver>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.4.4)\
+Requirement already satisfied: packaging>=20.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (23.1)\
+Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (3.0.9)\
+Requirement already satisfied: python-dateutil>=2.7 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (2.8.2)\
+Requirement already satisfied: pytz>=2020.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: tzdata>=2022.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: charset-normalizer<4,>=2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (3.2.0)\
+Requirement already satisfied: idna<4,>=2.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (2.10)\
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (1.26.16)\
+Requirement already satisfied: certifi>=2017.4.17 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (2023.7.22)\
+Requirement already satisfied: filelock in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.12.2)\
+Requirement already satisfied: typing-extensions in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (4.7.1)\
+Requirement already satisfied: sympy in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (1.12)\
+Requirement already satisfied: networkx in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.1)\
+Requirement already satisfied: jinja2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.1.2)\
+Requirement already satisfied: six>=1.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.16.0)\
+Requirement already satisfied: MarkupSafe>=2.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (2.1.3)\
+Requirement already satisfied: mpmath>=0.19 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (1.3.0)\
+\cf3 DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\cf2 \
+Requirement already satisfied: opencv-python in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (4.8.0.76)\
+Requirement already satisfied: numpy>=1.21.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from opencv-python) (1.23.5)\
+\cf3 DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\cf2 \
+### ComfyUI-Impact-Pack: Check basic models\
+### ComfyUI-Impact-Pack: Updating subpack\
+Requirement already satisfied: ultralytics in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (8.0.157)\
+Requirement already satisfied: matplotlib>=3.2.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (3.7.2)\
+Requirement already satisfied: numpy>=1.22.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (1.23.5)\
+Requirement already satisfied: opencv-python>=4.6.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (4.8.0.76)\
+Requirement already satisfied: pillow>=7.1.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (9.5.0)\
+Requirement already satisfied: pyyaml>=5.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (6.0.1)\
+Requirement already satisfied: requests>=2.23.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.31.0)\
+Requirement already satisfied: scipy>=1.4.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (1.11.2)\
+Requirement already satisfied: torch>=1.8.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.0.1)\
+Requirement already satisfied: torchvision>=0.9.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (0.15.2)\
+Requirement already satisfied: tqdm>=4.64.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (4.66.1)\
+Requirement already satisfied: pandas>=1.1.4 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (2.0.3)\
+Requirement already satisfied: seaborn>=0.11.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (0.12.2)\
+Requirement already satisfied: psutil in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (5.9.5)\
+Requirement already satisfied: py-cpuinfo in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from ultralytics->-r requirements.txt (line 1)) (9.0.0)\
+Requirement already satisfied: contourpy>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.1.0)\
+Requirement already satisfied: cycler>=0.10 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (0.11.0)\
+Requirement already satisfied: fonttools>=4.22.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (4.42.0)\
+Requirement already satisfied: kiwisolver>=1.0.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.4.4)\
+Requirement already satisfied: packaging>=20.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (23.1)\
+Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (3.0.9)\
+Requirement already satisfied: python-dateutil>=2.7 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (2.8.2)\
+Requirement already satisfied: pytz>=2020.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: tzdata>=2022.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 1)) (2023.3)\
+Requirement already satisfied: charset-normalizer<4,>=2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (3.2.0)\
+Requirement already satisfied: idna<4,>=2.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (2.10)\
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (1.26.16)\
+Requirement already satisfied: certifi>=2017.4.17 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 1)) (2023.7.22)\
+Requirement already satisfied: filelock in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.12.2)\
+Requirement already satisfied: typing-extensions in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (4.7.1)\
+Requirement already satisfied: sympy in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (1.12)\
+Requirement already satisfied: networkx in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.1)\
+Requirement already satisfied: jinja2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (3.1.2)\
+Requirement already satisfied: six>=1.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.2.2->ultralytics->-r requirements.txt (line 1)) (1.16.0)\
+Requirement already satisfied: MarkupSafe>=2.0 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from jinja2->torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (2.1.3)\
+Requirement already satisfied: mpmath>=0.19 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from sympy->torch>=1.8.0->ultralytics->-r requirements.txt (line 1)) (1.3.0)\
+\cf3 DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\cf2 \
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/__init__.py", line 66, in <module>\
+    import impact.impact_server  # to load server api\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/modules/impact/impact_server.py", line 10, in <module>\
+    import impact.core as core\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/modules/impact/core.py", line 5, in <module>\
+    from impact.utils import *\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/modules/impact/utils.py", line 2, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module\
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code\
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data\
+FileNotFoundError: [Errno 2] No such file or directory: '/Volumes/green_light/ComfyUI/custom_nodes/NodeGPT/__init__.py'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/NodeGPT module for custom nodes: [Errno 2] No such file or directory: '/Volumes/green_light/ComfyUI/custom_nodes/NodeGPT/__init__.py'\
+### Loading: ComfyUI-Manager (V0.23.3)\
+### ComfyUI Revision: 1317 [a7c79989]\
+### ComfyUI-Manager: Copy .js from '/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Manager/js/comfyui-manager.js' to '/Volumes/green_light/ComfyUI/web/extensions/comfyui-manager'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/clipseg.py", line 13, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/clipseg.py module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfyui_controlnet_aux/__init__.py", line 2, in <module>\
+    from .utils import here\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfyui_controlnet_aux/utils.py", line 4, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfyui_controlnet_aux module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Web extensions folder found at /Volumes/green_light/ComfyUI/web/extensions/ComfyLiterals\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/rembg-comfyui-node/__init__.py", line 1, in <module>\
+    from rembg import remove\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/rembg/__init__.py", line 5, in <module>\
+    from .bg import remove\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/rembg/bg.py", line 6, in <module>\
+    from cv2 import (\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/rembg-comfyui-node module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/SyrianFalconNodes.py", line 6, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/SyrianFalconNodes.py module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+### Copying: BilboX web...\
+__name__ : ComfyUI_node_Lilly\
+__file__ : /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_Lilly/__init__.py\
+os.path.basename(__file__) : __init__.py\
+os.path.splitext(os.path.basename(__file__))[0] : __init__\
+working directory :  /Volumes/green_light/ComfyUI\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472   init start  \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+__name__ : custom_nodes.ComfyUI_node_Lilly\
+__file__ : /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_Lilly/__init__.py\
+os.path.basename(__file__) : __init__.py\
+os.path.splitext(os.path.basename(__file__))[0] : __init__\
+working directory :  /Volumes/green_light/ComfyUI\
+[23:20:38] Load ok   : CheckpointLoaderRandom                     __init__.py:83\
+[23:20:38] os.path.basename(__file__) :  mypath.py                  mypath.py:29\
+           os.path.abspath(__file__)  :                             mypath.py:32\
+           /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_L             \
+           illy/mypath.py                                                       \
+           os.path.abspath(__file__)  :                             mypath.py:35\
+           /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_L             \
+           illy/mypath.py                                                       \
+           os.path.normpath(__file__) :                             mypath.py:38\
+           /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_L             \
+           illy/mypath.py                                                       \
+           os.path.dirname(normpath) :                              mypath.py:41\
+           /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_L             \
+           illy                                                                 \
+           os.path.basename(normpath) : mypath.py                   mypath.py:44\
+           os.path.abspath(sys.modules['__main__'].__file__) :      mypath.py:47\
+           /Volumes/green_light/ComfyUI/main.py                                 \
+           os.path.dirname(mainFile) : /Volumes/green_light/ComfyUI mypath.py:49\
+           Load ok   : CheckpointLoaderSimpleText                 __init__.py:83\
+           wildcards card_path :                                 wildcards.py:36\
+           /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_nod                \
+           e_Lilly/../../wildcards/**/*.txt                                     \
+           cards file count :  0                                wildcards.py:187\
+           wildcards test : aest                                wildcards.py:218\
+           wildcards test : *test                               wildcards.py:219\
+           wildcards test : ?est                                wildcards.py:220\
+           wildcards test : test                                wildcards.py:221\
+           wildcards test : /test                               wildcards.py:222\
+           wildcards test : /0/test                             wildcards.py:223\
+           Load ok   : CLIPTextEncodeWildcards                    __init__.py:83\
+           Load ok   : LoraLoaderText                             __init__.py:83\
+           Load ok   : LoraLoaderTextRandom                       __init__.py:83\
+           Load ok   : Random_Sampler                             __init__.py:83\
+           Load ok   : VAELoaderDecode                            __init__.py:83\
+           Load ok   : VAELoaderText                              __init__.py:83\
+           Load ok   : SimpleSampler                              __init__.py:83\
+           Load ok   : SaveImageSimple                            __init__.py:83\
+           Load ok   : TextWildcards                              __init__.py:83\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472   init end  \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-ImageReward/__init__.py", line 1, in <module>\
+    from .nodes import NODE_CLASS_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-ImageReward/nodes.py", line 1, in <module>\
+    import ImageReward as RM\
+ModuleNotFoundError: No module named 'ImageReward'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-ImageReward module for custom nodes: No module named 'ImageReward'\
+KSampler:Seed:979537337409677\
+KSampler:Steps:30\
+KSampler:Cfg:8.0\
+KSampler:Denoise:1.0\
+KSampler:Positive:masterpiece, best quality,\
+1girl, solo, long hair, black hair, from behind\
+KSampler:Negative:(worst quality, low quality:1.4), EasyNegative, ng_deepnegative_v1_75t, bad_prompt_version2,\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet/__init__.py", line 157, in <module>\
+    installNodes()\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet/__init__.py", line 155, in installNodes\
+    addComfyUINodesToMapping(nodeElement)\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet/__init__.py", line 114, in addComfyUINodesToMapping\
+    spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet/TranslateNode/translate_node.py", line 2, in <module>\
+    from googletrans import Translator, LANGUAGES\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/googletrans/__init__.py", line 6, in <module>\
+    from googletrans.client import Translator\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/googletrans/client.py", line 27, in <module>\
+    class Translator:\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/googletrans/client.py", line 57, in Translator\
+    proxies: typing.Dict[str, httpcore.SyncHTTPTransport] = None,\
+AttributeError: module 'httpcore' has no attribute 'SyncHTTPTransport'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet module for custom nodes: module 'httpcore' has no attribute 'SyncHTTPTransport'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy-qr/__init__.py", line 1, in <module>\
+    from .qr_nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy-qr/qr_nodes.py", line 2, in <module>\
+    import qrcode\
+ModuleNotFoundError: No module named 'qrcode'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy-qr module for custom nodes: No module named 'qrcode'\
+### Loading: Save as Webp\
+Copying JS files for Workflow loading\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/__init__.py", line 1, in <module>\
+    from custom_nodes.comfy_controlnet_preprocessors.nodes import edge_line, normal_depth_map, pose, semseg, others\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/__init__.py", line 1, in <module>\
+    from custom_nodes.comfy_controlnet_preprocessors.nodes import edge_line, normal_depth_map, pose, semseg, others\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/nodes/edge_line.py", line 1, in <module>\
+    from .util import common_annotator_call, img_np_to_tensor, img_tensor_to_np, skip_v1\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/nodes/util.py", line 1, in <module>\
+    from ..v1 import openpose_v1, midas\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/v1/openpose_v1/__init__.py", line 6, in <module>\
+    from . import util\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/v1/openpose_v1/util.py", line 4, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/trNodes/__init__.py", line 1, in <module>\
+    import custom_nodes.trNodes.image_layering as image_layering\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/trNodes/__init__.py", line 2, in <module>\
+    import custom_nodes.trNodes.color_correction as color_correction\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/trNodes/color_correction.py", line 4, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/trNodes module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Comfyroll Custom Nodes: Loaded\
+Davemane42 Custom Nodes: Loaded\
+Bmad-DirtyUndoRedo Loaded.\
+Efficiency Nodes Warning: Websocket connection failure.\
+Efficient KSampler's live preview images may not clear when vae decoding is set to 'true'.\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-post-processing-nodes/__init__.py", line 1, in <module>\
+    from .post_processing_nodes import NODE_CLASS_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-post-processing-nodes/post_processing_nodes.py", line 5, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-post-processing-nodes module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/DTAIComfyPromptAgent/__init__.py", line 5, in <module>\
+    from custom_nodes.DTGlobalVariables import variables\
+ModuleNotFoundError: No module named 'custom_nodes.DTGlobalVariables'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/DTAIComfyPromptAgent module for custom nodes: No module named 'custom_nodes.DTGlobalVariables'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyI2I/__init__.py", line 1, in <module>\
+    from .ComfyI2I import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyI2I/ComfyI2I.py", line 25, in <module>\
+    import tensorflow as tf\
+ModuleNotFoundError: No module named 'tensorflow'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyI2I module for custom nodes: No module named 'tensorflow'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/meh.py", line 9, in <module>\
+    from sd_meh import merge_methods\
+ModuleNotFoundError: No module named 'sd_meh'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/meh.py module for custom nodes: No module named 'sd_meh'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/AIT/__init__.py", line 1, in <module>\
+    from .AITemplate.AITemplate import AITemplateLoader, AITemplateControlNetLoader, AITemplateVAEDecode, AITemplateVAEEncode, VAEEncodeForInpaint, AITemplateEmptyLatentImage, AITemplateLatentUpscale\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/AIT/AITemplate/AITemplate.py", line 54, in <module>\
+    cuda = torch.cuda.get_device_capability()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 381, in get_device_capability\
+    prop = get_device_properties(device)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 395, in get_device_properties\
+    _lazy_init()  # will define _get_device_properties\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 239, in _lazy_init\
+    raise AssertionError("Torch not compiled with CUDA enabled")\
+AssertionError: Torch not compiled with CUDA enabled\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/AIT module for custom nodes: Torch not compiled with CUDA enabled\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module\
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code\
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data\
+FileNotFoundError: [Errno 2] No such file or directory: '/Volumes/green_light/ComfyUI/custom_nodes/tomeSD_for_Comfy/__init__.py'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/tomeSD_for_Comfy module for custom nodes: [Errno 2] No such file or directory: '/Volumes/green_light/ComfyUI/custom_nodes/tomeSD_for_Comfy/__init__.py'\
+Ib Custom Nodes: Loaded\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_InterpolateEverything/__init__.py", line 18, in <module>\
+    spec.loader.exec_module(comfy_controlnet_preprocessors)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors/__init__.py", line 1, in <module>\
+    from custom_nodes.comfy_controlnet_preprocessors.nodes import edge_line, normal_depth_map, pose, semseg, others\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec\
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec\
+  File "<frozen importlib._bootstrap_external>", line 1405, in _get_spec\
+  File "<frozen importlib._bootstrap_external>", line 1255, in __iter__\
+  File "<frozen importlib._bootstrap_external>", line 1242, in _recalculate\
+  File "<frozen importlib._bootstrap_external>", line 1238, in _get_parent_path\
+KeyError: 'custom_nodes.comfy_controlnet_preprocessors'\
+\
+During handling of the above exception, another exception occurred:\
+\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_InterpolateEverything/__init__.py", line 20, in <module>\
+    raise ImportError("Failed to load comfy_controlnet_preprocessors: \{\}".format(e))\
+ImportError: Failed to load comfy_controlnet_preprocessors: 'custom_nodes.comfy_controlnet_preprocessors'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_InterpolateEverything module for custom nodes: Failed to load comfy_controlnet_preprocessors: 'custom_nodes.comfy_controlnet_preprocessors'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Inpaint/__init__.py", line 1, in <module>\
+    from .inpainting_nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Inpaint/inpainting_nodes.py", line 6, in <module>\
+    from .inpaint.mediapipe import *\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Inpaint/inpaint/mediapipe.py", line 1, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Inpaint module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Imported node: DT_Glitch_This\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes/__init__.py", line 9, in <module>\
+    node_import = importlib.import_module('custom_nodes.ComfyUI-Vextra-Nodes.nodes.' + node)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes/__init__.py", line 9, in <module>\
+    node_import = importlib.import_module('custom_nodes.ComfyUI-Vextra-Nodes.nodes.' + node)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes/nodes/DT_PromptGen.py", line 14, in <module>\
+    model = GPT2LMHeadModel.from_pretrained(f'\{comfy_path\}custom_nodes/ComfyUI-Vextra-Nodes/binary/distilgpt2-stable-diffusion-v2')\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2093, in from_pretrained\
+    raise EnvironmentError(\
+OSError: Error no file named pytorch_model.bin, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes/binary/distilgpt2-stable-diffusion-v2.\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes module for custom nodes: Error no file named pytorch_model.bin, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes/binary/distilgpt2-stable-diffusion-v2.\
+[comfy_mtb] | STATUS -> Some nodes failed to load:\
+	Failed to import module generate because ModuleNotFoundError: No module named 'qrcode'\
+	Failed to import module image_interpolation because ModuleNotFoundError: No module named 'frame_interpolation.eval'\
+\
+Check that you properly installed the dependencies.\
+If you think this is a bug, please report it on the github page (https://github.com/melMass/comfy_mtb/issues)\
+[comfy_mtb] | STATUS -> Loaded the following nodes:\
+	Deep Bump (mtb): Normal & height maps generation from single pictures\
+	Float To Number (mtb): Node addon for the WAS Suite. Converts a "comfy" FLOAT to a NUMBER.\
+	Int To Bool (mtb): Basic int to bool conversion\
+	Int To Number (mtb): Node addon for the WAS Suite. Converts a "comfy" INT to a NUMBER.\
+	Latent Lerp (mtb): Linear interpolation (blend) between two latent vectors\
+	Save Gif (mtb): Save the images from the batch as a GIF\
+	Export With Ffmpeg (mtb): Export with FFmpeg (Experimental)\
+	String Replace (mtb): Basic string replacement\
+	Fit Number (mtb): Fit the input float using a source and target range\
+	Get Batch From History (mtb): Very experimental node to load images from the history of the server.\
+	Any To String (mtb): Tries to take any input and convert it to a string\
+	Animation Builder (mtb): Convenient way to manage basic animation maths at the core of many of my workflows\
+	Smart Step (mtb): Utils to control the steps start/stop of the KAdvancedSampler in percentage\
+	Styles Loader (mtb): Load csv files and populate a dropdown from the rows (\'e0 la A111)\
+	Interpolate Clip Sequential (mtb): -\
+	Bbox From Mask (mtb): From a mask extract the bounding box\
+	Bbox (mtb): The bounding box (BBOX) custom type used by other nodes\
+	Crop (mtb): Crops an image and an optional mask to a given bounding box\
+	Uncrop (mtb): Uncrops an image to a given bounding box\
+	Debug (mtb): Experimental node to debug any Comfy values, support for more types and widgets is planned\
+	Save Tensors (mtb): Save torch tensors (image, mask or latent) to disk, useful to debug things outside comfy\
+	Transform Image (mtb): Save torch tensors (image, mask or latent) to disk, useful to debug things outside comfy\
+	Load Image Sequence (mtb): Load an image sequence from a folder. The current frame is used to determine which image to load.\
+	Save Image Sequence (mtb): Save an image sequence to a folder. The current frame is used to determine which image to save.\
+	Color Correct (mtb): Various color correction methods\
+	Image Compare (mtb): Compare two images and return a difference image\
+	Blur (mtb): Blur an image using a Gaussian filter.\
+	Mask To Image (mtb): Converts a mask (alpha) to an RGB image with a color and background\
+	Colored Image (mtb): Constant color image of given size\
+	Image Premultiply (mtb): Premultiply image with mask\
+	Image Resize Factor (mtb): Extracted mostly from WAS Node Suite, with a few edits (most notably multiple image support) and less features.\
+	Save Image Grid (mtb): Save all the images in the input batch as a grid of images.\
+	Load Image From Url (mtb): Load an image from the given URL\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_mtb/__init__.py", line 183, in <module>\
+    from .endpoint import endlog\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfy_mtb/endpoint.py", line 9, in <module>\
+    import requirements\
+ModuleNotFoundError: No module named 'requirements'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfy_mtb module for custom nodes: No module named 'requirements'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/IPAdapter-ComfyUI/__init__.py", line 1, in <module>\
+    from .ip_adapter import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/IPAdapter-ComfyUI/ip_adapter.py", line 3, in <module>\
+    from .image_preprocessor import pad_to_square, face_crop\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/IPAdapter-ComfyUI/image_preprocessor.py", line 4, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/IPAdapter-ComfyUI module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Using split optimization for cross attention\
+/Volumes/green_light/ComfyUI/custom_nodes/failfast-comfyui-extensions/extensions\
+/Volumes/green_light/ComfyUI/web/extensions/failfast-comfyui-extensions\
+[ArtVenture] - STATUS - JS already linked\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Custom-Nodes/__init__.py", line 67, in <module>\
+    module = importlib.import_module(f".Nodes.\{key\}", package=__name__)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import\
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load\
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked\
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Custom-Nodes/Nodes/IF.py", line 12, in <module>\
+    from transformers import BitsAndBytesConfig, T5EncoderModel\
+ImportError: cannot import name 'BitsAndBytesConfig' from 'transformers' (/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/transformers/__init__.py)\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Custom-Nodes module for custom nodes: cannot import name 'BitsAndBytesConfig' from 'transformers' (/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/transformers/__init__.py)\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/__init__.py", line 8, in <module>\
+    from models.gmfss_fortuna import GMFSS_Fortuna_VFI\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/models/gmfss_fortuna/__init__.py", line 8, in <module>\
+    from .GMFSS_Fortuna_arch import Model as GMFSS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/models/gmfss_fortuna/GMFSS_Fortuna_arch.py", line 26, in <module>\
+    import cupy\
+ModuleNotFoundError: No module named 'cupy'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation module for custom nodes: No module named 'cupy'\
+Fooocus combined KSampler: loaded\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_FizzNodes/__init__.py", line 57, in <module>\
+    from .ScheduledNodes import ValueSchedule, PromptSchedule, PromptScheduleNodeFlow, PromptScheduleNodeFlowEnd, PromptScheduleEncodeSDXL #, PromptScheduleGLIGEN\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_FizzNodes/ScheduledNodes.py", line 4, in <module>\
+    import numexpr\
+ModuleNotFoundError: No module named 'numexpr'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_FizzNodes module for custom nodes: No module named 'numexpr'\
+Requirement already satisfied: opencv-python-headless in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (4.8.0.76)\
+Requirement already satisfied: diffusers in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (0.20.0)\
+Requirement already satisfied: numpy>=1.21.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from opencv-python-headless->-r requirements.txt (line 1)) (1.23.5)\
+Requirement already satisfied: importlib-metadata in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (6.8.0)\
+Requirement already satisfied: filelock in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (3.12.2)\
+Requirement already satisfied: huggingface-hub>=0.13.2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (0.16.4)\
+Requirement already satisfied: regex!=2019.12.17 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (2023.8.8)\
+Requirement already satisfied: requests in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (2.31.0)\
+Requirement already satisfied: safetensors>=0.3.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (0.3.1)\
+Requirement already satisfied: Pillow in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from diffusers->-r requirements.txt (line 2)) (9.5.0)\
+Requirement already satisfied: fsspec in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from huggingface-hub>=0.13.2->diffusers->-r requirements.txt (line 2)) (2023.6.0)\
+Requirement already satisfied: tqdm>=4.42.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from huggingface-hub>=0.13.2->diffusers->-r requirements.txt (line 2)) (4.66.1)\
+Requirement already satisfied: pyyaml>=5.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from huggingface-hub>=0.13.2->diffusers->-r requirements.txt (line 2)) (6.0.1)\
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from huggingface-hub>=0.13.2->diffusers->-r requirements.txt (line 2)) (4.7.1)\
+Requirement already satisfied: packaging>=20.9 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from huggingface-hub>=0.13.2->diffusers->-r requirements.txt (line 2)) (23.1)\
+Requirement already satisfied: zipp>=0.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from importlib-metadata->diffusers->-r requirements.txt (line 2)) (3.16.2)\
+Requirement already satisfied: charset-normalizer<4,>=2 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests->diffusers->-r requirements.txt (line 2)) (3.2.0)\
+Requirement already satisfied: idna<4,>=2.5 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests->diffusers->-r requirements.txt (line 2)) (2.10)\
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests->diffusers->-r requirements.txt (line 2)) (1.26.16)\
+Requirement already satisfied: certifi>=2017.4.17 in /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages (from requests->diffusers->-r requirements.txt (line 2)) (2023.7.22)\
+\cf3 DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\cf2 \
+\uc0\u49324 \u50857 \u48277 : git submodule [--quiet] [--cached]\
+   or: git submodule [--quiet] add [-b <branch>] [-f|--force] [--name <name>] [--reference <repository>] [--] <repository> [<path>]\
+   or: git submodule [--quiet] status [--cached] [--recursive] [--] [<path>...]\
+   or: git submodule [--quiet] init [--] [<path>...]\
+   or: git submodule [--quiet] deinit [-f|--force] (--all| [--] <path>...)\
+   or: git submodule [--quiet] update [--init [--filter=<filter-spec>]] [--remote] [-N|--no-fetch] [-f|--force] [--checkout|--merge|--rebase] [--[no-]recommend-shallow] [--reference <repository>] [--recursive] [--[no-]single-branch] [--] [<path>...]\
+   or: git submodule [--quiet] set-branch (--default|--branch <branch>) [--] <path>\
+   or: git submodule [--quiet] set-url [--] <path> <newurl>\
+   or: git submodule [--quiet] summary [--cached|--files] [--summary-limit <n>] [commit] [--] [<path>...]\
+   or: git submodule [--quiet] foreach [--recursive] <command>\
+   or: git submodule [--quiet] sync [--recursive] [--] [<path>...]\
+   or: git submodule [--quiet] absorbgitdirs [--] [<path>...]\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/pfaeff-comfyui/__init__.py", line 15, in <module>\
+    from .pfaeff import NODE_CLASS_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/pfaeff-comfyui/pfaeff.py", line 5, in <module>\
+    import cv2\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 181, in <module>\
+    bootstrap()\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 175, in bootstrap\
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module\
+    py_module = importlib.import_module(module_name)\
+  File "/opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py", line 126, in import_module\
+    return _bootstrap._gcd_import(name[level:], package, level)\
+  File "/Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-packages/cv2/typing/__init__.py", line 157, in <module>\
+    Prim = typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]\
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/pfaeff-comfyui module for custom nodes: module 'cv2.gapi.wip.draw' has no attribute 'Text'\
+Traceback (most recent call last):\
+  File "/Volumes/green_light/ComfyUI/nodes.py", line 1688, in load_custom_node\
+    module_spec.loader.exec_module(module)\
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module\
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfyui-dynamicprompts/__init__.py", line 1, in <module>\
+    from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfyui-dynamicprompts/nodes/__init__.py", line 1, in <module>\
+    from .combinatorial import DPCombinatorialGenerator\
+  File "/Volumes/green_light/ComfyUI/custom_nodes/comfyui-dynamicprompts/nodes/combinatorial.py", line 3, in <module>\
+    from dynamicprompts.enums import SamplingMethod\
+ModuleNotFoundError: No module named 'dynamicprompts'\
+\
+Cannot import /Volumes/green_light/ComfyUI/custom_nodes/comfyui-dynamicprompts module for custom nodes: No module named 'dynamicprompts'\
+\
+Import times for custom nodes:\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/tomeSD_for_Comfy\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/NodeGPT\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/yugioh-presets.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/LatentByRatio.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/fcSuite.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/sampler_tonemap.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/clip_text_encode_split.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/sampler_rescalecfg.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/reference_only.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/sdxl_utility.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/advanced_model_merging.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Image-Selector\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ksampler_gpu.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/sdxl_model_merging.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Eagle-PNGInfo\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SDXLMixSampler.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/hakkun_nodes.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/bsz-auto-hires.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/conditioning_sizing_for_SDXL.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/wildcards.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Ib_CustomNodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Styles_CSV_Loader\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Sokes-Nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/noise_latent_perlinpinpin\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_InterpolateEverything\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/As_ComfyUI_CustomNodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/clip_text_encoder_a1111.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SD-Latent-Upscaler\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_JPS-Nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/sdxl_prompt_styler\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/AIGODLIKE-COMFYUI-TRANSLATION\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/prompt_generator.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SD-Latent-Interposer\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/asymmetric-tiling-comfyui\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_SimpleMath\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui_lora_tag_loader\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-SDXL-EmptyLatentImage\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/MergeBlockWeighted_fo_ComfyUI\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Logic\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Noise\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ambw_comfyui\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_TravelSuite\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Preset_Merger\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/meh.py\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/DTAIComfyPromptAgent\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SDXLAspectRatio.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/yk-node-suite-comfyui\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfy-image-saver\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyLiterals\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-ImageReward\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_ADV_CLIP_emb\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Cutoff\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_TiledKSampler\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-send-eagle-slim\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_NetDist\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Saveaswebp\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfy_clip_blip_node\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/wlsh_nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SD-Advanced-Noise\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/mikey_nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/masquerade-nodes-comfyui\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-p2ldgan\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy-qr-validation-nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Fans\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfy-nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_hus_utils\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/abg-comfyui\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-LexMSDBNodes\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy_pixelization\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_FizzNodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Load_Image_With_Metadata\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfyui-dynamicprompts\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy-qr\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/EXT_VariationUtils.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_SeeCoder\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-various\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-QualityOfLifeSuit_Omar92\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Bmad-DirtyUndoRedo\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/stability-ComfyUI-nodes\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-SaveImgPrompt\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyI2I\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Fooocus_KSampler\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/IPAdapter-ComfyUI\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-animatediff\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfyui_controlnet_aux\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Inpaint\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/SeargeSDXL\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-art-venture\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyMath\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/rembg-comfyui-node\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/images-grid-comfy-plugin\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfy-pants\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/trNodes\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-nodes-hnmr\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/OneButtonPrompt\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/failfast-comfyui-extensions\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-post-processing-nodes\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/SyrianFalconNodes.py\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Dave_CustomNode\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy_controlnet_preprocessors\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/rgthree-comfy\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-FaceSwap\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-PixelArt-Detector\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/Derfuu_ComfyUI_ModdedNodes\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/AIT\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/sc-node-comfyui\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Manager\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Custom-Nodes\
+   0.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy_mtb\
+   0.0 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-prompt-control\
+   0.1 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_smZNodes\
+   0.1 seconds: /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_node_Lilly\
+   0.1 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/clipseg.py\
+   0.1 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI_Custom_Nodes_AlekPet\
+   0.1 seconds: /Volumes/green_light/ComfyUI/custom_nodes/EXT_AudioManipulation.py\
+   0.2 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-PromptAttention\
+   0.3 seconds: /Volumes/green_light/ComfyUI/custom_nodes/efficiency-nodes-comfyui\
+   0.4 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Vextra-Nodes\
+   0.5 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/was-node-suite-comfyui\
+   0.5 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/comfy_vid2vid\
+   0.7 seconds: /Volumes/green_light/ComfyUI/custom_nodes/bilbox-comfyui\
+   1.0 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/pfaeff-comfyui\
+   1.2 seconds: /Volumes/green_light/ComfyUI/custom_nodes/comfyui-reactor-node\
+   1.5 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/facedetailer\
+   4.6 seconds (IMPORT FAILED): /Volumes/green_light/ComfyUI/custom_nodes/ComfyUI-Impact-Pack\
+\
+[ArtVenture] - STATUS - Runner is disabled\
+\uc0\u9581 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472  Traceback (most recent call last) \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9582 \
+\uc0\u9474  /Volumes/green_light/ComfyUI/main.py:187 in <module>                         \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474    184 \u9474    \u9474    call_on_start = startup_server                                 \u9474 \
+\uc0\u9474    185 \u9474                                                                       \u9474 \
+\uc0\u9474    186 \u9474    try:                                                               \u9474 \
+\uc0\u9474  \u10097  187 \u9474    \u9474    loop.run_until_complete(run(server, address=args.listen, port= \u9474 \
+\uc0\u9474    188 \u9474    except KeyboardInterrupt:                                          \u9474 \
+\uc0\u9474    189 \u9474    \u9474    print("\\nStopped server")                                      \u9474 \
+\uc0\u9474    190                                                                        \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474  /opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versi \u9474 \
+\uc0\u9474  ons/3.10/lib/python3.10/asyncio/base_events.py:649 in run_until_complete     \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474     646 \u9474    \u9474    if not future.done():                                         \u9474 \
+\uc0\u9474     647 \u9474    \u9474    \u9474    raise RuntimeError('Event loop stopped before Future comp \u9474 \
+\uc0\u9474     648 \u9474    \u9474                                                                  \u9474 \
+\uc0\u9474  \u10097   649 \u9474    \u9474    return future.result()                                        \u9474 \
+\uc0\u9474     650 \u9474                                                                      \u9474 \
+\uc0\u9474     651 \u9474    def stop(self):                                                   \u9474 \
+\uc0\u9474     652 \u9474    \u9474    """Stop running the event loop.                               \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474  /Volumes/green_light/ComfyUI/main.py:102 in run                              \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474     99 \u9474    \u9474    comfy.model_management.soft_empty_cache()                      \u9474 \
+\uc0\u9474    100                                                                        \u9474 \
+\uc0\u9474    101 async def run(server, address='', port=8188, verbose=True, call_on_sta \u9474 \
+\uc0\u9474  \u10097  102 \u9474    await asyncio.gather(server.start(address, port, verbose, call_on_ \u9474 \
+\uc0\u9474    103                                                                        \u9474 \
+\uc0\u9474    104                                                                        \u9474 \
+\uc0\u9474    105 def hijack_progress(server):                                           \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474  /Volumes/green_light/ComfyUI/server.py:581 in start                          \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474    578 \u9474    \u9474    runner = web.AppRunner(self.app)                               \u9474 \
+\uc0\u9474    579 \u9474    \u9474    await runner.setup()                                           \u9474 \
+\uc0\u9474    580 \u9474    \u9474    site = web.TCPSite(runner, address, port)                      \u9474 \
+\uc0\u9474  \u10097  581 \u9474    \u9474    await site.start()                                             \u9474 \
+\uc0\u9474    582 \u9474    \u9474                                                                   \u9474 \
+\uc0\u9474    583 \u9474    \u9474    if address == '':                                              \u9474 \
+\uc0\u9474    584 \u9474    \u9474    \u9474    address = '0.0.0.0'                                        \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474  /Volumes/green_light/stable-diffusion-webui/venv/lib/python3.10/site-package \u9474 \
+\uc0\u9474  s/aiohttp/web_runner.py:121 in start                                         \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474    118 \u9474    \u9474    loop = asyncio.get_event_loop()                                \u9474 \
+\uc0\u9474    119 \u9474    \u9474    server = self._runner.server                                   \u9474 \
+\uc0\u9474    120 \u9474    \u9474    assert server is not None                                      \u9474 \
+\uc0\u9474  \u10097  121 \u9474    \u9474    self._server = await loop.create_server(                       \u9474 \
+\uc0\u9474    122 \u9474    \u9474    \u9474    server,                                                    \u9474 \
+\uc0\u9474    123 \u9474    \u9474    \u9474    self._host,                                                \u9474 \
+\uc0\u9474    124 \u9474    \u9474    \u9474    self._port,                                                \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474  /opt/homebrew/Cellar/python@3.10/3.10.12_1/Frameworks/Python.framework/Versi \u9474 \
+\uc0\u9474  ons/3.10/lib/python3.10/asyncio/base_events.py:1519 in create_server         \u9474 \
+\uc0\u9474                                                                               \u9474 \
+\uc0\u9474    1516 \u9474    \u9474    \u9474    \u9474    \u9474    try:                                              \u9474 \
+\uc0\u9474    1517 \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    sock.bind(sa)                                 \u9474 \
+\uc0\u9474    1518 \u9474    \u9474    \u9474    \u9474    \u9474    except OSError as err:                            \u9474 \
+\uc0\u9474  \u10097  1519 \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    raise OSError(err.errno, 'error while attempt \u9474 \
+\uc0\u9474    1520 \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474      'to bind on address %r: %s'     \u9474 \
+\uc0\u9474    1521 \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474    \u9474      % (sa, err.strerror.lower())) f \u9474 \
+\uc0\u9474    1522 \u9474    \u9474    \u9474    \u9474    completed = True                                      \u9474 \
+\uc0\u9584 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9583 \
+OSError: [Errno 48] error while attempting to bind on address ('127.0.0.1', \
+8188): address already in use\
+(venv) (base) blueindigo@Sungs-Mac-Studio ComfyUI % lsof -i :8188\
+COMMAND  PID       USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\
+Python  1220 blueindigo   21u  IPv4 0x1b82ff71702eaa65      0t0  TCP localhost:8188 (LISTEN)\
+(venv) (base) blueindigo@Sungs-Mac-Studio ComfyUI % kill -9 <PID>\
+zsh: parse error near `\\n'\
+(venv) (base) blueindigo@Sungs-Mac-Studio ComfyUI %                           \
+}
